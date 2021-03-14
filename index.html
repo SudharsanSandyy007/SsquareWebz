@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S_Sq_WebZ | A Front End Developing Start Up</title>
+    <title>Document</title>
     <script src="https://kit.fontawesome.com/d05936ebe4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,11 +17,16 @@
     <section class="sec0">
     <div class="top">
         <div class="logo" >
-            <i class="fab fa-stripe-s"></i>  <i class="fas fa-th"></i></i>
-            <b> WebZ </b>
+           <a href="#Home"> <i class="fab fa-stripe-s"></i>  <i class="fas fa-th"></i></i>
+            <b> WebZ </b></a>
         </div>
-        <div class="nav">
+        <div class="ham" id="ham"> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars" style="font-size: 20px;"></i>
+            </a>
+        </div>
+        <div class="nav" id="myTopnav">
             <ul>
+                <li class="crs" id="crs" ><a href="javascript:void(0);" onclick="myFunction()"><i class="fas fa-times" style="font-size: 40px; " ></i></a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Plans">Plans</a></li>
@@ -34,25 +39,36 @@
 
 <!-- Section 1 -->
 
-    <div class="sec1">
+    <div id="Home" class="sec1">
 
         <div class="left">
             <span style="color: rgb(2, 212, 99); font-size: 1.4rem; ">Hi, We are</span> <br>
-            <h1 style="font-size: 4.9rem;">S_square<br> Webz</h1>
+            <h1 style="font-size: 4rem;">S_square<br> Webz</h1>
             <span style="color: rgb(2, 212, 99); font-size: 1.5rem;"> &nbsp; - An, Front-End web  developing <br>  startup! :)</span> <br><br><br>
-            <p style="color: #BDBDBD; font-size: 1.5rem;">Want to create some cool websites for your dream businez!? 
-                or in plan for sharing an e-invitation though your whatsapp chat being the current trend...!? 
-                Here we are !!!</p>
+            <p style="color: #BDBDBD; font-size: 1.4rem;">  Want to create some cool websites for your dream businez!? 
+                or in plan for sharing an e-invitation though your whatsapp chat, which being the current trend...!? <br>
+                Here we are...! :)</p>
             <br><br>
 
-            <b style="font-size: 1.5rem;" >&nbsp; We build dreams by building catchy websites, <br>
+            <b style="font-size: 1.4rem;" >&nbsp; We build dreams by building catchy websites, <br>
               for your dearm businez !....Get Started! :)</b>
             <br><br><br>
 
-            <input type="button" value="See my work" class="btn">
-        
+            <a href=""><input type="button" value="See my work" class="btn"></a>
+            <svg class="tick" width="63" height="54" viewBox="0 0 63 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15.6919" y="38.1289" width="50" height="5" transform="rotate(-28.6386 15.6919 38.1289)" fill="#02D463"/>
+                <rect x="16.9618" y="43.5635" width="25" height="5" transform="rotate(-118.639 16.9618 43.5635)" fill="#02D463"/>
+             </svg>
+             <svg class="o" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="23.5" cy="23.5" r="21" stroke="#00CDE2" stroke-width="5"/>
+            </svg>
+            <svg class="x" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3.41516" y="9.15039" width="50" height="5" transform="rotate(30 3.41516 9.15039)" fill="#FF5252"/>
+                <rect x="38.4808" y="3.41504" width="50" height="5" transform="rotate(120 38.4808 3.41504)" fill="#FF5252"/>
+            </svg>
+                
         </div>
-
+      
         <div class="right">
             <br><br><br><br>
            
@@ -61,13 +77,14 @@
             </center>
 
             <div class="show-case">
-         <div> <img src="w1.png" width="260px" alt="">
-        <img src="w2.png" width="260px" alt=""></div>
-               <div>
-
-                <img src="w3.png" width="260px" alt="">
-                <img src="w4.png" width="260px" alt="">
-               </div>
+            <div> 
+                 <img src="w1.png"  alt="">
+                 <img src="w2.png" alt="">
+            </div>
+            <div>
+                <img src="w3.png"  alt="">
+                <img src="w4.png"  alt="">
+            </div>
             </div>
 
         </div>
@@ -80,12 +97,12 @@
     <div id="About" class="sec2">
         
         <div  class="about">
-            <h1 style="font-size: 2rem;">About us</h1>
+            <h1 style="font-size: 2.2rem;">About us</h1>
             <br> <br>
-            <p style="font-size: 1.3rem; color: #BDBDBD; text-align: justify;">  we started coding in 
+            <p style="font-size: 1.3rem; color: #BDBDBD; text-align: justify;"> &nbsp;&nbsp; We started coding in 
              2019 and we are self-taught 
-             developer. We have a passion
-             for modern looking websites with a 
+             developerZ. We have a passion
+             for modern looking websites with  
             few aniations. We love what we are 
             doing, and we are highly motivated to 
             collaborate with someone. If you are up 
@@ -94,15 +111,15 @@
         </div>
         
         <div class="partners" style="align-items: center; justify-content: center;">
-            <div class="heading"><h1 class="title" style="font-size: 36px;">Partners</h1></div>
+            <div class="heading"><h1 class="title" style="font-size: 39px;">Partners</h1></div>
 
             <div class="imgbox">
-                <div class="Sandyy"><a target="_blank" href="https://www.instagram.com/sumaaar_moonji_kumaar/"><img src="Sandyy.jpg" alt=""> </a><p style="font-size: 20px; color:#BDBDBD;">Sudharsan D</p></div>
+                <div class="Sandyy"><a target="_blank" href="https://www.instagram.com/sumaaar_moonji_kumaar/"><img src="Sandyy.JPG" alt=""> </a><p style="font-size: 20px; color:#BDBDBD;">Sudharsan D</p></div>
                 <div class="Mendyy"><a target="_blank" href="https://www.instagram.com/san_zai_/"><img src="Mendyy.jpg"  alt=""></a> <p style="font-size: 20px; color:#BDBDBD;"> Sanjay S</p><br></div>
             </div>
 
             <div class="quotes">
-                <p style="font-size: 18px; color: #02D463; text-align: justify;"> &nbsp;&nbsp; "Doing somthing gr8 towadrs your dream gives u happiness. And the only way to do that with full fun is to, joinning ur best frnd with the same goal...!"
+                <p style="font-size: 18px; color: #02D463; text-align: justify;"> &nbsp;&nbsp; "Doing somthing gr8 towadrs your dream gives u happiness. And the only way to do that with full fun is to, join ur best frnd with the same goal...!"
                     <br><br> - Larry Page</p>
             </div>
         </div>
@@ -144,7 +161,7 @@
             <ul class="price">
           <b> Basic(New Born Baby BdY Celebration event Invitations)</b></li>
               <br><br><center><li class="grey"><h1>Rs.499 /- </h1></center> <br><br><br>
-            <a href="#" class="button">Pay</a> <br><br>
+            <a href="http://wa.me/917904427572" class="button">Chat</a> <br><br>
             </ul>
         </div>
         
@@ -152,7 +169,7 @@
             <ul class="price">
                <b>E-Wedding Invitations</b> <br><br>
               <br><br><center><h1>Rs.799/-</h1></center> <br><br><br>
-              <a href="#" class="button">Pay</a> <br><br>
+              <a href="http://wa.me/918220997244" class="button">Chat</a> <br><br>
             </ul>
         </div>
 
@@ -160,7 +177,7 @@
             <ul class="price">
                <b>For Businez (FULL STack)</b> <br>
               <br><br><center><h1>5000 /-</h1></center> <br><br><br>
-              <a href="#" class="button">Pay</a> <br><br>
+              <a href="http://wa.me/917904427572" class="button">Chat</a> <br><br>
             </ul>
         </div>
           
@@ -230,7 +247,7 @@
 
 <!-------------------Footer----------------->
 
-    
+
     <div class="footer">
 
         <div class="social">
@@ -255,5 +272,38 @@
     </div>
 
 </div>
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      var i = document.getElementById("ham");
+      var c = document.getElementById("crs");
+      if (x.className === "nav") {
+        x.className = " responsive";
+        if(i.style.display==="none")
+        {
+            i.style.display="block";
+            c.style.display="none"
+        }
+        else{
+        i.style.display="none";
+        c.style.display="block"
+        }
+
+      } else {
+        x.className = "nav";
+        if(i.style.display==="none")
+        {
+            i.style.display="block";
+            c.style.display="none"
+        }
+        else{
+        i.style.display="none";
+        c.style.display="block"
+        }
+      }
+    }
+    </script>
 </body>
 </html>
