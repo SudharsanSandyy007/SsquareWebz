@@ -13,15 +13,14 @@
 position: absolute;
 top: 20%;
 right: 45%;
-z-index: -1;
 transition: all 0.2s ease 0s;
 filter: drop-shadow(rgb(255, 82, 82) 0px 0px 15px);
 }
+
 .o{
 position: absolute;
 top: 30%;
 right: 5%;
-z-index: -1;
 transition: all 0.2s ease 0s;
 filter: drop-shadow(rgb(0, 205, 226) 0px 0px 15px);
 }
@@ -29,11 +28,25 @@ filter: drop-shadow(rgb(0, 205, 226) 0px 0px 15px);
   position: absolute;
   bottom: 12%;
   left: 27%;
-  z-index: -1;
   transition: all 0.2s ease 0s;
   filter: drop-shadow(rgb(2, 212, 99) 0px 0px 15px);
 }
 
+.x:hover{
+  transform: rotate(180deg);
+  transition: all 0.2s ease 0s;
+  filter: none;
+}
+.o:hover{
+  transform: scale(0.9);
+  transition: all 0.2s ease 0s;
+  filter: none;
+}
+.tick:hover{
+  transform: scale(1.1);
+    transition: all 0.2s ease 0s;
+    filter: none;
+}
 a {
   text-decoration: none;
 }
@@ -354,25 +367,28 @@ span:hover {
 .contact .txt {
   padding: 10% 10%;
   background-color: #1a1a1a;
-  border: none;
+  border: 2px solid transparent;
   box-shadow: rgb(0 0 0 / 50%) 0px 0px 10px;
   border-radius: 5px;
   margin: 2%;
 }
 .contact .txt-area {
   background-color: #1a1a1a;
-  border: none;
+  border: 2px solid transparent;
   box-shadow: rgb(0 0 0 / 50%) 0px 0px 10px;
 }
 
 .contact .txt:hover {
   border: 2px solid #02d463;
+  transition: all 0.2s ease;
   color: #02d463;
 }
 .contact .txt-area:hover {
+  transition: all 0.2s ease;
   border: 2px solid #02d463;
   color: #02d463;
 }
+
 
 .contact label {
   color: #bdbdbd;
@@ -445,6 +461,7 @@ span:hover {
   .ham{
     display: block;
     padding: 20px;
+    transition: all 0.2s ease;
   }
   .tick{
     position: absolute;
@@ -465,7 +482,7 @@ span:hover {
   }
   .responsive{
     padding: 5%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
     background-color: #111111;
@@ -493,6 +510,12 @@ span:hover {
   }
   .responsive ul li a:hover{
     color: #02D463;
+  }
+  #selected{
+    background-color: #02d463;
+    color: white;
+    font-size: large;
+    font-weight: 200;
   }
   .sec1,.projects,.sec2{
     grid-template-columns: 1fr;
@@ -550,6 +573,20 @@ span:hover {
   }
   .plans-wrapper{
     width: 100%;
+    padding: 10% 0;
+  }
+  .plans{
+    padding: 0px;
+    margin: 0px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+
+  }
+  .columns .button{
+    width: 90%;
   }
   .projects{
     flex-direction: column;
@@ -588,5 +625,8 @@ span:hover {
   }
   .footer a{
     margin: 10px;
+  }
+  .footer .sbt-btn{
+    padding: 50%;
   }
 }
