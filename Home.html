@@ -7,7 +7,12 @@
     <title>Sq_WebZ | Front End Developing StartUp 1.4</title>
     <script src="https://kit.fontawesome.com/d05936ebe4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_0sfBfMGY0DOUC6Np89tk9");
+})();
+</script>
 </head>
 
 <body>
@@ -223,20 +228,20 @@
                 <div class="t">
                     <div class="t1">
                         <label for="name">Name</label> 
-                        <input type="text" id="name" class="txt"> 
+                        <input type="text" id="fromName" class="txt"> 
                     </div>
                     <div class="t2">
-                        <label for="email">Email</label>
+                        <label for="email" id="">Email</label>
                         <input type="email" id="email" class="txt"> 
                     </div>
                 </div>
                 <br> <br>
                 <div class="ta1">
                     <label for="ta">Message</label>
-                    <textarea aria-label="Message" id="ta" class="txt-area" rows="15" cols="45"  ></textarea>        
+                    <textarea aria-label="Message" id="msg" class="txt-area" rows="15" cols="45"  ></textarea>        
                 </div>
                 <div class="b">
-                    <input type="button" value="Submit" onclick="sendEmail()" class="sbt-btn">
+                    <input type="button" value="Submit" onclick="sendMail()" class="sbt-btn">
                 </div>
 
             </form>
@@ -276,18 +281,17 @@
 
 
 <script>
-    function sendEmail(){
-        Email.send({
-    Host : "smtp.gmail.com",
-    Username : "sudharsandevakumar@gmail.com",
-    Password : "Nirantharaa@123",
-    To : 'sudharsan.d2019@vitstudent.ac.in',
-    From : "sudharsandevakumar@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
+    function sendMail(params){
+        var tempParams ={
+            from_name:document.getElementById('fromName').value,
+            to_name:"S_Sq_Webz",
+            message:document.getElementById('msg').value,
+        };
+
+        emailjs.send('service_pg4icuo','template_cnn1kwq',tempParams)
+        .then(function(res){
+            console.log("success",res.status);
+        })
     }
     function myFunction() {
       var x = document.getElementById("myTopnav");
