@@ -241,7 +241,7 @@ emailjs.init("user_0sfBfMGY0DOUC6Np89tk9");
                     <textarea aria-label="Message" id="msg" class="txt-area" rows="15" cols="45"  required></textarea>        
                 </div>
                 <div class="b">
-                    <input type="button" value="Submit" onclick="sendMail()" class="sbt-btn">
+                    <input type="reset" value="Submit" onclick="sendMail()" class="sbt-btn">
                 </div>
 
             </form>
@@ -284,7 +284,7 @@ emailjs.init("user_0sfBfMGY0DOUC6Np89tk9");
     function sendMail(params){
         var tempParams ={
             from_name:document.getElementById('fromName').value,
-            to_name:"S_Sq_Webz",
+            to_name:document.getElementById('email').value,
             message:document.getElementById('msg').value,
         };
 
